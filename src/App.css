@@ -1,38 +1,122 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.common-div {
+  background-color: #0DB5EA;
+  height: 106px;
+  width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.hospital-logo {
+  height: 28px;
+}
+
+.hospital-name {
+  font-size: 48px;
+  font-weight: bold;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.profile {
+  background-color: #E8E8E8;
+  height: 56px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.profile-text {
+  font-size: 28px;
+}
+
+.content {
+  padding: 20px;
+}
+
+.image-upload {
+  position: absolute;
+  left: 192px;
+  top: 309px;
+  background-color: grey;
+  width: 206px;
+  height: 186px;
+}
+
+.image-upload input[type="file"] {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.submit-button {
+  position: absolute;
+  left: 314px;
+  top: 470px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.submit-button button {
+  background-color: #0DB5EA;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.custom-div {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 617px;
+  top: 310.5px;
+  width: 785.25px;
+  max-height: 408px;
+  background-color: #E8E8E8;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 50%;
+  padding: 10px;
+}
+
+.details-container input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 5px;
+  font-size: 18px;
+}
+
+.details-container input[type="text"]::placeholder {
+  font-size: 50%;
+}
+
+.submit-button-below-custom-div {
+  position: absolute;
+  left: 1296px;
+  top: 758px;
+  text-align: center;
+}
+
+.submit-button-below-custom-div button {
+  background-color: #0DB5EA;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
